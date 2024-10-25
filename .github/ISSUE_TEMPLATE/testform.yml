@@ -27,7 +27,9 @@ body:
     attributes:
       label: More build details
       description: Provide more build details here
-      placeholder:
+      placeholder: |
+        What build did a regression start?
+        If you don't know, please find out and add this info later.
   - type: dropdown
     id: browsers
     attributes:
