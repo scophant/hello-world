@@ -8,13 +8,13 @@ body:
   - type: textarea
     id: what-happened
     attributes:
-      label: Bug Description (What is in the bug happening)
+      label: Bug Description
       description: Tell us which tool or feature has the bug and include a short and specific summary of issue.
       placeholder: 
   - type: textarea
     id: what-should-happen
     attributes:
-      label: Expected behavior (What should happen)
+      label: Expected behavior
       description: Tell us what should happen, or how the tool/feature used to work before a regression started.
       placeholder: 
   - type: input
@@ -59,3 +59,5 @@ body:
         - [ ] justification / impact
         - [ ] tech details
         - [ ] test plan
+
+  
