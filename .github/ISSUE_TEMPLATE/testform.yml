@@ -1,0 +1,57 @@
+name: Test Form (do not use)
+description: Create a bug
+title: "[Tool: behavior...]"
+labels: ["A-bug", "B-moderate", "C-dev", "C-test"]
+assignees:
+  - scot7557
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Bug Description (What is happening)
+      description: Tell us which tool or feature has the bug and include a short and specific summary of issue.
+      placeholder: 
+  - type: textarea
+    id: what-should-happen
+    attributes:
+      label: Expected behavior (What should happen)
+      description: Tell us what should happen, or how the tool/feature used to work before a regression started.
+      placeholder: 
+  - type: input
+    id: version
+    attributes:
+      label: Version and build
+      description: What version of Pro did you first reproduce?
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Regression?
+      options:
+        - "No"
+        - "Yes"
+        - "Not sure"
+      default: 0
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+  - type: textarea
+    attributes:
+      label: wrr
+      description: some info...
+      value: |
+        [] tech details
+        [] test plan
+        [] other stuff
+        ...
+  
