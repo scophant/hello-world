@@ -1,6 +1,6 @@
 name: Test Form (do not use)
 description: Create a bug
-title: "[Tool: behavior...]"
+title: "[Tool name: bug behavior...]"
 labels: ["A-bug", "B-moderate", "C-dev", "C-test"]
 assignees:
   - scot7557
@@ -8,7 +8,7 @@ body:
   - type: textarea
     id: what-happened
     attributes:
-      label: Bug Description (What is happening)
+      label: Bug Description (What is in the bug happening)
       description: Tell us which tool or feature has the bug and include a short and specific summary of issue.
       placeholder: 
   - type: textarea
@@ -22,6 +22,12 @@ body:
     attributes:
       label: Version and build
       description: What version of Pro did you first reproduce?
+  - type: textarea
+    id: build-details
+    attributes:
+      label: More build details
+      description: Provide more build details here
+      placeholder:
   - type: dropdown
     id: browsers
     attributes:
@@ -32,27 +38,22 @@ body:
         - "Not sure"
       default: 0
   - type: textarea
-    id: logs
+    id: additional-info
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Additional info
+      description: Provide additional info here
+      value: |
+        Additional Test Cases
+        Related issues
+        Break out issues
+        Patch Target Releases
+        Patch in Releases
   - type: textarea
     attributes:
       label: wrr
-      description: some info...
+      description: wrr checklist
       value: |
         - [ ] wrr draft
         - [ ] justification / impact
         - [ ] tech details
         - [ ] test plan
-
-  
