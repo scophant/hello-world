@@ -50,8 +50,8 @@ body:
       label: wrr
       description: some info...
       value: |
-        [] tech details
-        [] test plan
-        [] other stuff
+        [ ] tech details
+        [ ] test plan
+        [ ] other stuff
         ...
   
