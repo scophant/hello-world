@@ -14,7 +14,7 @@ body:
   - type: textarea
     id: steps
     attributes:
-      label: Steps to reproduce
+      label: "Steps to reproduce:"
       description: Tell the exact steps to reproduce the bug and location of the data, if required.
       value: |
         data path: \\archive\crdata\ArcGISPro\editing\
@@ -24,18 +24,18 @@ body:
   - type: textarea
     id: what-should-happen
     attributes:
-      label: Expected behavior
+      label: "Expected behavior:"
       description: Tell us what should happen, or how the tool/feature used to work before a regression started.
       placeholder: 
   - type: input
     id: version
     attributes:
-      label: Version and build
+      label: "Version and build:"
       description: What version of Pro did you first reproduce?
   - type: dropdown
     id: build-q
     attributes:
-      label: Regression?
+      label: "Is this a regression?"
       options:
         - "Not sure"
         - "Yes"
@@ -44,7 +44,7 @@ body:
   - type: textarea
     id: build-details
     attributes:
-      label: More build details
+      label: "More build details:"
       description: Provide more build details here
       placeholder: |
         What build did a regression start?
@@ -52,8 +52,8 @@ body:
   - type: dropdown
     id: failing-test-q
     attributes:
-      label: Is there a failing test?
-      description: If so, please add the "T-Automated Testing 35" label.
+      label: "Are there any failing automated tests?"
+      description: If so, please add failing test info in the additional information section below and add the "T-Automated Testing 35" label.
       options:
         - "Not sure"
         - "Yes"
@@ -62,9 +62,11 @@ body:
   - type: textarea
     id: additional-info
     attributes:
-      label: Additional info
+      label: "Additional information:"
       description: Provide additional info here
       value: |
+        Failing test info:
+        
         Additional Test Cases:
         
         Related issues:
@@ -80,5 +82,3 @@ body:
         - [ ] justification / impact
         - [ ] tech details
         - [ ] test plan
-
-  
