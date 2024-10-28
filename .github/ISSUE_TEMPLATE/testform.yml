@@ -36,6 +36,7 @@ body:
     id: build-q
     attributes:
       label: "Is this a regression?"
+      description: If so, be sure to add "T-z Regression" label and include the build it started in the "More build details" section below.
       options:
         - "Not sure"
         - "Yes"
@@ -47,14 +48,13 @@ body:
       label: "More build details:"
       description: What build did a regression start? What builds did you test and reproduce or not?
       placeholder: |
-        Use this section for stuff like....
-        What build did a regression start? If you don't know, please find out and add this info later.
-        Info about builds that you tested and reproduced or not.
+        Build a regression started
+        Info about builds that you tested and reproduced or not
   - type: dropdown
     id: failing-test-q
     attributes:
       label: "Are there any failing automated tests?"
-      description: If so, please add failing test info in the additional information section below and add the "T-Automated Testing 35" label.
+      description: If so, please add failing test info in the "Additional information" section below and add the "T-Automated Testing 35" label.
       options:
         - "Not sure"
         - "Yes"
