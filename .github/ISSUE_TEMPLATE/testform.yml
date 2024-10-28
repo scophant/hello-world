@@ -12,6 +12,16 @@ body:
       description: Tell us which tool or feature has the bug and include a short and specific summary of issue.
       placeholder: 
   - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Tell the exact steps to reproduce the bug and location of the data, if required.
+      value: |
+        data path: \\archive\crdata\ArcGISPro\editing\
+        
+        1.
+        
+  - type: textarea
     id: what-should-happen
     attributes:
       label: Expected behavior
@@ -22,6 +32,15 @@ body:
     attributes:
       label: Version and build
       description: What version of Pro did you first reproduce?
+  - type: dropdown
+    id: build-q
+    attributes:
+      label: Regression?
+      options:
+        - "Not sure"
+        - "Yes"
+        - "No"
+      default: 0
   - type: textarea
     id: build-details
     attributes:
@@ -31,13 +50,14 @@ body:
         What build did a regression start?
         If you don't know, please find out and add this info later.
   - type: dropdown
-    id: browsers
+    id: failing-test-q
     attributes:
-      label: Regression?
+      label: Is there a failing test?
+      description: If so, please add the "T-Automated Testing 35" label.
       options:
-        - "No"
-        - "Yes"
         - "Not sure"
+        - "Yes"
+        - "No"
       default: 0
   - type: textarea
     id: additional-info
@@ -54,12 +74,8 @@ body:
         Patch Target Releases:
         
         Patch in Releases:
-        
-  - type: textarea
-    attributes:
-      label: wrr
-      description: wrr checklist
-      value: |
+
+        WRR checklist:
         - [ ] wrr draft
         - [ ] justification / impact
         - [ ] tech details
