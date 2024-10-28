@@ -45,11 +45,11 @@ body:
     id: build-details
     attributes:
       label: "More build details:"
-      description: Provide more build details here
+      description: What build did a regression start? What builds did you test and reproduce or not?
       placeholder: |
         Use this section for stuff like....
-        - What build did a regression start? If you don't know, please find out and add this info later.
-        - Builds that you tested and reproduced or not.
+        What build did a regression start? If you don't know, please find out and add this info later.
+        Info about builds that you tested and reproduced or not.
   - type: dropdown
     id: failing-test-q
     attributes:
