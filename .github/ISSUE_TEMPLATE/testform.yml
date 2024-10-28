@@ -8,7 +8,7 @@ body:
   - type: textarea
     id: what-happened
     attributes:
-      label: Bug Description
+      label: "Bug Description:"
       description: Tell us which tool or feature has the bug and include a short and specific summary of issue.
       placeholder: 
   - type: textarea
