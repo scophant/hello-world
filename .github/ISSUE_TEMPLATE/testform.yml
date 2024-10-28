@@ -30,8 +30,8 @@ body:
   - type: input
     id: version
     attributes:
-      label: "Version and build:"
-      description: What version of Pro did you first reproduce?
+      label: "Build first reproduced:"
+      description: What version and build of Pro did you first reproduce?
   - type: dropdown
     id: build-q
     attributes:
@@ -47,8 +47,9 @@ body:
       label: "More build details:"
       description: Provide more build details here
       placeholder: |
-        What build did a regression start?
-        If you don't know, please find out and add this info later.
+        Use this section for stuff like....
+        - What build did a regression start? If you don't know, please find out and add this info later.
+        - Builds that you tested and reproduced or not.
   - type: dropdown
     id: failing-test-q
     attributes:
@@ -82,3 +83,5 @@ body:
         - [ ] justification / impact
         - [ ] tech details
         - [ ] test plan
+
+  
