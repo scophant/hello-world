@@ -21,7 +21,7 @@ body:
         
         1. 
 
-        "[additional scenarios...]"
+        [additional scenarios...]
   - type: textarea
     id: what-should-happen
     attributes:
@@ -84,5 +84,3 @@ body:
         - [ ] justification / impact
         - [ ] tech details
         - [ ] test plan
-
-  
