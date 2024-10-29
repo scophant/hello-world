@@ -1,9 +1,7 @@
-name: Test Form (do not use)
-description: Create a bug
+name: Report a bug (prototype)
+description: Report a bug
 title: "[Tool name: bug behavior...]"
 labels: ["A-bug", "B-moderate", "C-dev", "C-test"]
-assignees:
-  - scot7557
 body:
   - type: textarea
     id: what-happened
@@ -84,3 +82,7 @@ body:
         - [ ] justification / impact
         - [ ] tech details
         - [ ] test plan
+
+        Closing a bug criteria:
+        - [ ] manually verified all scenarios and related issues?
+        - [ ] automated test? Path to test:
