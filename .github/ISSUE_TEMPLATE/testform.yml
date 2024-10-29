@@ -15,12 +15,13 @@ body:
     id: steps
     attributes:
       label: "Steps to reproduce:"
-      description: Tell us the exact steps to reproduce the bug and location of the data, if required.
+      description: Tell us the exact steps to reproduce the bug and location of the data, if required. Additional scenarios can be added to this section later.
       value: |
         data path: \\archive\crdata\ArcGISPro\editing\
         
-        1.
-        
+        1. 
+
+        "[additional scenarios...]"
   - type: textarea
     id: what-should-happen
     attributes:
@@ -48,8 +49,8 @@ body:
       label: "More build details:"
       description: What build did a regression start? What builds did you test and reproduce or not?
       placeholder: |
-        Build a regression started
-        Info about builds that you tested and reproduced or not
+        - Build a regression started
+        - Info about builds that you tested and reproduced or not
   - type: dropdown
     id: failing-test-q
     attributes:
